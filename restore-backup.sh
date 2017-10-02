@@ -1,5 +1,5 @@
-#!/usr/bin/env bash
-###################
+#!/bin/bash
+###########
 
 backup_file=~/Documents/backups/Google-Chrome/profile.tar.gz
 orig_dir=~/Library/Application\ Support/Google/Chrome/Default/
