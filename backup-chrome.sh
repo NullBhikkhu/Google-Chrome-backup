@@ -10,7 +10,8 @@ if [ ! -d ~/Documents/backups/Google-Chrome/ ]; then
     echo "Done."
 fi
 
-#  Check to see if ~/Documents/backups/Google-Chrome/profile.tar.gz exists. If it does, move it to profile.tar.gz.old.
+#  Check to see if ~/Documents/backups/Google-Chrome/profile.tar.gz exists.
+#+ If it does, move it to profile.tar.gz.old.
 if [ -f ~/Documents/backups/Google-Chrome/profile.tar.gz ]; then
     echo "~/Documents/backups/Google-Chrome/profile.tar.gz already exists. Moving to profile.tar.gz.old..."
     mv ~/Documents/backups/Google-Chrome/profile.tar.gz ~/Documents/backups/Google-Chrome/profile.tar.gz.old
