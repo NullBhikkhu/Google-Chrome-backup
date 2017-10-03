@@ -5,7 +5,7 @@ cd ~/
 
 #  Check to see if ~/Documents/backups/Google-Chrome/ exists. If it doesn't, create it.
 if [ ! -d ~/Documents/backups/Google-Chrome/ ]; then
-    echo  "~/Documents/backups/Google-Chrome/ does not exist. Creating it now..."
+    echo  "$HOME/Documents/backups/Google-Chrome/ does not exist. Creating it now..."
     mkdir -p ~/Documents/backups/Google-Chrome/
     echo "Done."
 fi
@@ -13,7 +13,7 @@ fi
 #  Check to see if ~/Documents/backups/Google-Chrome/profile.tar.gz exists.
 #+ If it does, move it to profile.tar.gz.old.
 if [ -f ~/Documents/backups/Google-Chrome/profile.tar.gz ]; then
-    echo "~/Documents/backups/Google-Chrome/profile.tar.gz already exists. Moving to profile.tar.gz.old..."
+    echo "$HOME/Documents/backups/Google-Chrome/profile.tar.gz already exists. Moving to profile.tar.gz.old..."
     mv ~/Documents/backups/Google-Chrome/profile.tar.gz ~/Documents/backups/Google-Chrome/profile.tar.gz.old
     echo "Done."
 fi
@@ -29,7 +29,7 @@ if [ -d ~/Library/Application\ Support/Google/Chrome/Default/ ]; then
     done
     echo "Done."
 elif [ ! -d ~/Library/Application\ Support/Google/Chrome/Default/ ]; then
-    echo "~/Library/Application Support/Google/Chrome/Default/ does not exist: nothing to back up: exiting."
+    echo "$HOME/Library/Application Support/Google/Chrome/Default/ does not exist: nothing to back up: exiting."
     exit 1
 fi
 
