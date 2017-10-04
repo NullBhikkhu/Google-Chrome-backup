@@ -15,13 +15,13 @@ while [ ! -d "$script_dir" ]; do
 done
 
 #  Check if ~/.bin exists. If it doesn't, create it.
-if [ ! -d ~/.bin/ ]; then
-    mkdir -p ~/.bin/
+if [ ! -d ~/.bin/google-chrome-backup/ ]; then
+    mkdir -p ~/.bin/google-chrome-backup/
 fi
 
 #  Move backup-chrome.sh and restore-backup.sh and copy setup.sh to ~/.bin.
-mv $DIR/{backup-chrome.sh,restore-backup.sh} ~/.bin/
-cp $DIR/setup.sh ~/.bin/.setup.sh
+cp $DIR/{backup-chrome.sh,restore-backup.sh} ~/.bin/google-chrome-backup/
+cp $DIR/setup.sh ~/.bin/google-chrome-backup/.setup.sh
 
 #  Create the links to the files in the directory the user specified.
 cd "$script_dir"
