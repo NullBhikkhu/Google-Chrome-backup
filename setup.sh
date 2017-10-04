@@ -20,8 +20,8 @@ if [ ! -d ~/.bin/ ]; then
 fi
 
 #  Move backup-chrome.sh and restore-backup.sh and copy setup.sh to ~/.bin.
-mv $DIR/{backup-chrome.sh,restore-backup.sh} .bin/
-cp $DIR/setup.sh .bin/.setup.sh
+mv $DIR/{backup-chrome.sh,restore-backup.sh} ~/.bin/
+cp $DIR/setup.sh ~/.bin/.setup.sh
 
 #  Create the links to the files in the directory the user specified.
 cd "$script_dir"
