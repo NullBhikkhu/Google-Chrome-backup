@@ -15,13 +15,13 @@ cd ~/
 if [ -f "$backup_file" ]; then
     echo "Restoring backup..."
     rm -R "$orig_dir" 2>/dev/null
-    tar -xf "$backup_file"
+    tar -xpf "$backup_file"
     echo "Done."
 elif [ ! -f "$backup_file" ]; then
     if [ -f "$backup_file_old" ]; then
         echo "profile.tar.gz not found. Restoring from profile.tar.gz.old..."
         rm -R "$orig_dir" 2>/dev/null
-        tar -xf "$backup_file_old"
+        tar -xpf "$backup_file_old"
         echo "Done."
         exit 1
     elif [ ! -f "$backup_file_old" ]; then
