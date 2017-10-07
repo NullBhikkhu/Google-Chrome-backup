@@ -1,8 +1,6 @@
 #!/bin/bash
 ###########
 
-# TEST COMMENT
-
 cd ~/
 
 #  Check to see if ~/.backup-data/Google-Chrome/ exists. If it doesn't, create it.
