@@ -24,7 +24,7 @@ fi
 if [ -d ~/Library/Application\ Support/Google/Chrome/Default/ ]; then
     echo "Backing up Google Chrome personal files..."
     tar -czpf ~/.backup-data/Google-Chrome/profile.tar.gz  Library/Application\ Support/Google/Chrome/Default/ 2>/dev/null
-    while [ $? -ne 0 ]; do
+    while [ $? -eq 1 ]; do
         tar -czpf ~/.backup-data/Google-Chrome/profile.tar.gz  Library/Application\ Support/Google/Chrome/Default/ 2>/dev/null
     done
     echo "Done."
