@@ -3,8 +3,6 @@
 
 cd ~/
 
-
-
 #  Check to see if ~/.backup-data/Google-Chrome/ exists. If it doesn't, create it.
 if [ ! -d ~/.backup-data/Google-Chrome/ ]; then
   echo  "$HOME/.backup-data/Google-Chrome/ does not exist. Creating it now..."
